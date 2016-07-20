@@ -54,8 +54,16 @@
                                     <constraint firstAttribute="height" constant="400" id="bMG-Sg-Yrm"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ALARM TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnC-cm-Ohd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnC-cm-Ohd">
                                 <rect key="frame" x="192" y="267" width="217" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ALARM TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxK-yt-dAI">
+                                <rect key="frame" x="192" y="335" width="217" height="44"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,14 +75,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="0.0" height="4"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="alarmTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-QK-AHv">
-                                <rect key="frame" x="100" y="319" width="400" height="66"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="4"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currentTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqK-bV-7lG">
@@ -97,23 +97,33 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="alarmTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJV-DQ-KCF">
+                                <rect key="frame" x="101" y="387" width="400" height="66"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="IxK-yt-dAI" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="57A-Ss-61t"/>
                             <constraint firstItem="dqK-bV-7lG" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="5Qf-oe-2Me"/>
-                            <constraint firstItem="rbL-QK-AHv" firstAttribute="top" secondItem="vnC-cm-Ohd" secondAttribute="bottom" constant="10" id="Dxb-vJ-cNj"/>
+                            <constraint firstItem="LJV-DQ-KCF" firstAttribute="top" secondItem="IxK-yt-dAI" secondAttribute="bottom" constant="10" id="BnX-JM-xxu"/>
+                            <constraint firstItem="IxK-yt-dAI" firstAttribute="top" secondItem="vnC-cm-Ohd" secondAttribute="bottom" constant="10" id="Dc2-yT-9zo"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="MWN-NE-bwt"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="NPj-gr-jt6"/>
-                            <constraint firstItem="rbL-QK-AHv" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="b0u-Df-qaw"/>
                             <constraint firstItem="Tms-QV-SdQ" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="dGX-rk-T9o"/>
                             <constraint firstItem="dqK-bV-7lG" firstAttribute="top" secondItem="hEJ-g3-v7f" secondAttribute="bottom" constant="10" id="fuF-u4-GE7"/>
+                            <constraint firstItem="LJV-DQ-KCF" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="nue-Mg-q0W"/>
                             <constraint firstItem="hEJ-g3-v7f" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="t32-vV-Bdt"/>
                             <constraint firstItem="Tms-QV-SdQ" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="yba-dS-PqR"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="top" secondItem="dqK-bV-7lG" secondAttribute="bottom" constant="10" id="zPY-9p-ZQH"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="alarmTimeDisplayLabel" destination="rbL-QK-AHv" id="PBS-AO-NwS"/>
+                        <outlet property="alarmTimeDisplayLabel" destination="LJV-DQ-KCF" id="s28-xQ-XvY"/>
                         <outlet property="currentTimeDisplayLabel" destination="dqK-bV-7lG" id="gOk-Sq-vqh"/>
                     </connections>
                 </viewController>
