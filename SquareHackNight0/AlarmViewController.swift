@@ -27,7 +27,7 @@ class AlarmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "xx_dosequis.png")!)
+//        self.view.backgroundColor = UIImageView(square.png)
         
         if let dosEquisThemeSong = self.setupAudioPlayerWithFile("DosEquisThemeSong", type:"mp3") {
             self.dosEquisThemeSong = dosEquisThemeSong

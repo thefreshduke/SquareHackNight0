@@ -16,6 +16,7 @@
 		6F625DDD1D3F127D00B5B622 /* SquareHackNight0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F625DDC1D3F127D00B5B622 /* SquareHackNight0UITests.swift */; };
 		6F625DEB1D3F12D800B5B622 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F625DEA1D3F12D800B5B622 /* AlarmViewController.swift */; };
 		6F625DED1D3F148100B5B622 /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DEC1D3F148100B5B622 /* DosEquisThemeSong.mp3 */; };
+		6F625DEF1D3F1BEA00B5B622 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DEE1D3F1BEA00B5B622 /* square.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6F625DDE1D3F127D00B5B622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F625DEA1D3F12D800B5B622 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		6F625DEC1D3F148100B5B622 /* DosEquisThemeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DosEquisThemeSong.mp3; sourceTree = "<group>"; };
+		6F625DEE1D3F1BEA00B5B622 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				6F625DEC1D3F148100B5B622 /* DosEquisThemeSong.mp3 */,
+				6F625DEE1D3F1BEA00B5B622 /* square.png */,
 				6F625DBB1D3F127C00B5B622 /* SquareHackNight0 */,
 				6F625DD01D3F127D00B5B622 /* SquareHackNight0Tests */,
 				6F625DDB1D3F127D00B5B622 /* SquareHackNight0UITests */,
@@ -237,6 +240,7 @@
 			files = (
 				6F625DC71D3F127C00B5B622 /* LaunchScreen.storyboard in Resources */,
 				6F625DC41D3F127C00B5B622 /* Assets.xcassets in Resources */,
+				6F625DEF1D3F1BEA00B5B622 /* square.png in Resources */,
 				6F625DED1D3F148100B5B622 /* DosEquisThemeSong.mp3 in Resources */,
 				6F625DC21D3F127C00B5B622 /* Main.storyboard in Resources */,
 			);

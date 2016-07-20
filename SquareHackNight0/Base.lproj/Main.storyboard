@@ -47,30 +47,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tms-QV-SdQ">
+                                <rect key="frame" x="100" y="89" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="3Id-Q7-NzW"/>
+                                    <constraint firstAttribute="height" constant="400" id="bMG-Sg-Yrm"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ALARM TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnC-cm-Ohd">
                                 <rect key="frame" x="192" y="267" width="217" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="alarmTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-QK-AHv">
-                                <rect key="frame" x="147" y="319" width="307" height="66"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currentTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqK-bV-7lG">
-                                <rect key="frame" x="136" y="193" width="330" height="66"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CURRENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEJ-g3-v7f">
-                                <rect key="frame" x="192" y="141" width="217" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <rect key="frame" x="136" y="141" width="330" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="alarmTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-QK-AHv">
+                                <rect key="frame" x="100" y="319" width="400" height="66"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currentTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqK-bV-7lG">
+                                <rect key="frame" x="100" y="193" width="400" height="66"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3L-Wi-qmH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="1Pt-ro-0Xn">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="vtS-eE-ZUz">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="GTt-9A-8mM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,8 +105,10 @@
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="MWN-NE-bwt"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="NPj-gr-jt6"/>
                             <constraint firstItem="rbL-QK-AHv" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="b0u-Df-qaw"/>
+                            <constraint firstItem="Tms-QV-SdQ" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="dGX-rk-T9o"/>
                             <constraint firstItem="dqK-bV-7lG" firstAttribute="top" secondItem="hEJ-g3-v7f" secondAttribute="bottom" constant="10" id="fuF-u4-GE7"/>
                             <constraint firstItem="hEJ-g3-v7f" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="t32-vV-Bdt"/>
+                            <constraint firstItem="Tms-QV-SdQ" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="yba-dS-PqR"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="top" secondItem="dqK-bV-7lG" secondAttribute="bottom" constant="10" id="zPY-9p-ZQH"/>
                         </constraints>
                     </view>
@@ -94,4 +122,7 @@
             <point key="canvasLocation" x="1098" y="352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.png" width="500" height="500"/>
+    </resources>
 </document>
