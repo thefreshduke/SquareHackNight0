@@ -47,35 +47,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ALARM TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jy9-wB-qSl">
-                                <rect key="frame" x="177" y="285" width="246" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dsl-3J-5GM">
-                                <rect key="frame" x="177" y="197" width="246" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-5h-Wbf">
-                                <rect key="frame" x="177" y="134" width="246" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ALARM TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnC-cm-Ohd">
+                                <rect key="frame" x="192" y="267" width="217" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="alarmTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-QK-AHv">
+                                <rect key="frame" x="147" y="319" width="307" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="currentTimeDisplayLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqK-bV-7lG">
+                                <rect key="frame" x="136" y="193" width="330" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CURRENT TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEJ-g3-v7f">
+                                <rect key="frame" x="192" y="141" width="217" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jy9-wB-qSl" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="2UT-yZ-w1o"/>
-                            <constraint firstItem="Dsl-3J-5GM" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="5WX-yF-8iK"/>
-                            <constraint firstItem="Jy9-wB-qSl" firstAttribute="top" secondItem="Dsl-3J-5GM" secondAttribute="bottom" constant="50" id="K2A-CY-CDy"/>
-                            <constraint firstItem="Q4I-5h-Wbf" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="og2-tZ-Eum"/>
-                            <constraint firstItem="Dsl-3J-5GM" firstAttribute="top" secondItem="Q4I-5h-Wbf" secondAttribute="bottom" constant="30" id="v1P-W7-P3h"/>
-                            <constraint firstItem="Jy9-wB-qSl" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="xOk-rR-8xS"/>
+                            <constraint firstItem="dqK-bV-7lG" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="5Qf-oe-2Me"/>
+                            <constraint firstItem="rbL-QK-AHv" firstAttribute="top" secondItem="vnC-cm-Ohd" secondAttribute="bottom" constant="10" id="Dxb-vJ-cNj"/>
+                            <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="MWN-NE-bwt"/>
+                            <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="NPj-gr-jt6"/>
+                            <constraint firstItem="rbL-QK-AHv" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="b0u-Df-qaw"/>
+                            <constraint firstItem="dqK-bV-7lG" firstAttribute="top" secondItem="hEJ-g3-v7f" secondAttribute="bottom" constant="10" id="fuF-u4-GE7"/>
+                            <constraint firstItem="hEJ-g3-v7f" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="t32-vV-Bdt"/>
+                            <constraint firstItem="vnC-cm-Ohd" firstAttribute="top" secondItem="dqK-bV-7lG" secondAttribute="bottom" constant="10" id="zPY-9p-ZQH"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="alarmTimeLabel" destination="Jy9-wB-qSl" id="cGh-hK-iTd"/>
-                        <outlet property="currentTimeDisplayLabel" destination="Dsl-3J-5GM" id="Gs7-QT-9XD"/>
+                        <outlet property="alarmTimeDisplayLabel" destination="rbL-QK-AHv" id="PBS-AO-NwS"/>
+                        <outlet property="currentTimeDisplayLabel" destination="dqK-bV-7lG" id="gOk-Sq-vqh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7K-hs-ttD" userLabel="First Responder" sceneMemberID="firstResponder"/>

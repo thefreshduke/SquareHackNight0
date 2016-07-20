@@ -15,13 +15,14 @@ class AlarmViewController: UIViewController {
     var timer = NSTimer()
     var startingTime = NSTimeInterval()
     
-    @IBOutlet weak var alarmTimeLabel: UITextField!
+    @IBOutlet weak var currentTimeDisplayLabel: UILabel!
+    
+    @IBOutlet weak var alarmTimeDisplayLabel: UILabel!
+    
     
     var alarmHour: Int = 19
-    var alarmMinute: Int = 10
-    var alarmSecond: Int = 20
-    
-    @IBOutlet weak var currentTimeDisplayLabel: UITextField!
+    var alarmMinute: Int = 32
+    var alarmSecond: Int = 00
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,7 @@ class AlarmViewController: UIViewController {
         let strAlarmMinute = String(format: "%02d", alarmMinute)
         let strAlarmSecond = String(format: "%02d", alarmSecond)
         
-        alarmTimeLabel.text = "\(strAlarmHour):\(strAlarmMinute):\(strAlarmSecond)"
+        alarmTimeDisplayLabel.text = "\(strAlarmHour):\(strAlarmMinute):\(strAlarmSecond)"
     }
     
     func setupAudioPlayerWithFile(file: NSString, type: NSString) -> AVAudioPlayer?  {
