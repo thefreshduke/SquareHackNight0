@@ -88,7 +88,7 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3L-Wi-qmH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="1Pt-ro-0Xn">
+                                    <navigationItem id="1Pt-ro-0Xn">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="vtS-eE-ZUz">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="GTt-9A-8mM"/>
@@ -105,6 +105,28 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="4"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP8-UW-ZuH">
+                                <rect key="frame" x="234" y="456" width="133" height="111"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAlarm:" destination="DQz-dr-MvE" eventType="touchUpInside" id="zL4-PU-Yvp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyH-gT-Owu">
+                                <rect key="frame" x="20" y="69" width="560" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Fgr-g5-cgF"/>
+                                    <constraint firstAttribute="width" constant="560" id="lLq-Pg-wDX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.037066020669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -114,9 +136,13 @@
                             <constraint firstItem="IxK-yt-dAI" firstAttribute="top" secondItem="vnC-cm-Ohd" secondAttribute="bottom" constant="10" id="Dc2-yT-9zo"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="MWN-NE-bwt"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="NPj-gr-jt6"/>
+                            <constraint firstItem="QyH-gT-Owu" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="ZTu-VR-C52"/>
+                            <constraint firstItem="hEJ-g3-v7f" firstAttribute="top" secondItem="QyH-gT-Owu" secondAttribute="bottom" constant="10" id="ccH-df-cEw"/>
                             <constraint firstItem="Tms-QV-SdQ" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="dGX-rk-T9o"/>
+                            <constraint firstItem="cP8-UW-ZuH" firstAttribute="top" secondItem="LJV-DQ-KCF" secondAttribute="bottom" constant="10" id="f5w-Gv-KuE"/>
                             <constraint firstItem="dqK-bV-7lG" firstAttribute="top" secondItem="hEJ-g3-v7f" secondAttribute="bottom" constant="10" id="fuF-u4-GE7"/>
                             <constraint firstItem="LJV-DQ-KCF" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="nue-Mg-q0W"/>
+                            <constraint firstItem="cP8-UW-ZuH" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="r24-3h-4MI"/>
                             <constraint firstItem="hEJ-g3-v7f" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="t32-vV-Bdt"/>
                             <constraint firstItem="Tms-QV-SdQ" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="yba-dS-PqR"/>
                             <constraint firstItem="vnC-cm-Ohd" firstAttribute="top" secondItem="dqK-bV-7lG" secondAttribute="bottom" constant="10" id="zPY-9p-ZQH"/>
@@ -125,6 +151,7 @@
                     <connections>
                         <outlet property="alarmTimeDisplayLabel" destination="LJV-DQ-KCF" id="s28-xQ-XvY"/>
                         <outlet property="currentTimeDisplayLabel" destination="dqK-bV-7lG" id="gOk-Sq-vqh"/>
+                        <outlet property="statusLabel" destination="QyH-gT-Owu" id="5uE-xR-8VD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7K-hs-ttD" userLabel="First Responder" sceneMemberID="firstResponder"/>

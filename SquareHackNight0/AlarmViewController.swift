@@ -15,23 +15,30 @@ class AlarmViewController: UIViewController {
     var timer = NSTimer()
     var startingTime = NSTimeInterval()
     
+    @IBOutlet weak var statusLabel: UILabel!
+    
     @IBOutlet weak var currentTimeDisplayLabel: UILabel!
     
     @IBOutlet weak var alarmTimeDisplayLabel: UILabel!
     
+    var alarmHour: Int = 20
+    var alarmMinute: Int = 56
+    var alarmSecond: Int = 20
     
-    var alarmHour: Int = 19
-    var alarmMinute: Int = 32
-    var alarmSecond: Int = 00
+    @IBAction func stopAlarm(sender: AnyObject) {
+        dosEquisThemeSong?.stop()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.backgroundColor = UIImageView(square.png)
-        
         if let dosEquisThemeSong = self.setupAudioPlayerWithFile("DosEquisThemeSong", type:"mp3") {
             self.dosEquisThemeSong = dosEquisThemeSong
         }
+        
+        //        if let dosEquisThemeSong = self.setupAudioPlayerWithFile("roll", type:"mp3") {
+        //            self.dosEquisThemeSong = dosEquisThemeSong
+        //        }
         
         let functionSelector: Selector = #selector(AlarmViewController.updateTime)
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: functionSelector, userInfo: nil, repeats: true)
@@ -84,9 +91,24 @@ class AlarmViewController: UIViewController {
         
         // song loops repeatedly
         if (alarmHour == hour && alarmMinute == minute && alarmSecond == second) {
-            dosEquisThemeSong?.numberOfLoops = 1
             dosEquisThemeSong?.volume = 1
             dosEquisThemeSong?.play()
+        }
+        
+        if (alarmHour == hour && alarmMinute == minute && alarmSecond == (second - 10)) {
+            if dosEquisThemeSong!.playing {
+                statusLabel.text = "YOU PAID UP"
+            }
+            else {
+                statusLabel.text = "YOU WOKE UP"
+            }
+        }
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer,
+                                     successfully flag: Bool) {
+        if flag {
+            print("end")
         }
     }
 }
