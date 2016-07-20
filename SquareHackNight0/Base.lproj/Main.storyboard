@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SquareHackNight0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZz-y4-kmq">
+                                <rect key="frame" x="277" y="285" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <segue destination="DQz-dr-MvE" kind="show" id="eES-1s-TvI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qZz-y4-kmq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="93p-o0-aAi"/>
+                            <constraint firstItem="qZz-y4-kmq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qDK-H5-5WU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Alarm View Controller-->
+        <scene sceneID="1w8-gB-i9r">
+            <objects>
+                <viewController id="DQz-dr-MvE" customClass="AlarmViewController" customModule="SquareHackNight0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ss8-OM-50R"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eid-7p-AT6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oPN-eK-YAL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ALARM TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jy9-wB-qSl">
+                                <rect key="frame" x="177" y="285" width="246" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dsl-3J-5GM">
+                                <rect key="frame" x="177" y="197" width="246" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CURRENT TIME" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4I-5h-Wbf">
+                                <rect key="frame" x="177" y="134" width="246" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jy9-wB-qSl" firstAttribute="centerY" secondItem="oPN-eK-YAL" secondAttribute="centerY" id="2UT-yZ-w1o"/>
+                            <constraint firstItem="Dsl-3J-5GM" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="5WX-yF-8iK"/>
+                            <constraint firstItem="Jy9-wB-qSl" firstAttribute="top" secondItem="Dsl-3J-5GM" secondAttribute="bottom" constant="50" id="K2A-CY-CDy"/>
+                            <constraint firstItem="Q4I-5h-Wbf" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="og2-tZ-Eum"/>
+                            <constraint firstItem="Dsl-3J-5GM" firstAttribute="top" secondItem="Q4I-5h-Wbf" secondAttribute="bottom" constant="30" id="v1P-W7-P3h"/>
+                            <constraint firstItem="Jy9-wB-qSl" firstAttribute="centerX" secondItem="oPN-eK-YAL" secondAttribute="centerX" id="xOk-rR-8xS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alarmTimeLabel" destination="Jy9-wB-qSl" id="cGh-hK-iTd"/>
+                        <outlet property="currentTimeDisplayLabel" destination="Dsl-3J-5GM" id="Gs7-QT-9XD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7K-hs-ttD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="352"/>
+        </scene>
+    </scenes>
+</document>
