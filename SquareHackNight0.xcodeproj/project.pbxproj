@@ -17,9 +17,6 @@
 		6F625DEB1D3F12D800B5B622 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F625DEA1D3F12D800B5B622 /* AlarmViewController.swift */; };
 		6F625DED1D3F148100B5B622 /* DosEquisThemeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DEC1D3F148100B5B622 /* DosEquisThemeSong.mp3 */; };
 		6F625DEF1D3F1BEA00B5B622 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DEE1D3F1BEA00B5B622 /* square.png */; };
-		6F625DF41D3F277800B5B622 /* roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DF31D3F277800B5B622 /* roll.mp3 */; };
-		6F625DF51D3F277800B5B622 /* roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DF31D3F277800B5B622 /* roll.mp3 */; };
-		6F625DF61D3F277800B5B622 /* roll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F625DF31D3F277800B5B622 /* roll.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +53,6 @@
 		6F625DEA1D3F12D800B5B622 /* AlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		6F625DEC1D3F148100B5B622 /* DosEquisThemeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DosEquisThemeSong.mp3; sourceTree = "<group>"; };
 		6F625DEE1D3F1BEA00B5B622 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
-		6F625DF31D3F277800B5B622 /* roll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = roll.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				6F625DEC1D3F148100B5B622 /* DosEquisThemeSong.mp3 */,
-				6F625DF31D3F277800B5B622 /* roll.mp3 */,
 				6F625DEE1D3F1BEA00B5B622 /* square.png */,
 				6F625DBB1D3F127C00B5B622 /* SquareHackNight0 */,
 				6F625DD01D3F127D00B5B622 /* SquareHackNight0Tests */,
@@ -248,7 +243,6 @@
 				6F625DEF1D3F1BEA00B5B622 /* square.png in Resources */,
 				6F625DED1D3F148100B5B622 /* DosEquisThemeSong.mp3 in Resources */,
 				6F625DC21D3F127C00B5B622 /* Main.storyboard in Resources */,
-				6F625DF41D3F277800B5B622 /* roll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F625DF51D3F277800B5B622 /* roll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F625DF61D3F277800B5B622 /* roll.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
