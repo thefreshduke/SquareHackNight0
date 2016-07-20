@@ -83,7 +83,7 @@ class AlarmViewController: UIViewController {
         
         // song loops repeatedly
         if (alarmHour == hour && alarmMinute == minute && alarmSecond == second) {
-            dosEquisThemeSong?.numberOfLoops = -1
+            dosEquisThemeSong?.numberOfLoops = 1
             dosEquisThemeSong?.volume = 1
             dosEquisThemeSong?.play()
         }
