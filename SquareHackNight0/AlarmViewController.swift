@@ -21,9 +21,9 @@ class AlarmViewController: UIViewController {
     
     @IBOutlet weak var alarmTimeDisplayLabel: UILabel!
     
-    var alarmHour: Int = 20
-    var alarmMinute: Int = 56
-    var alarmSecond: Int = 20
+    var alarmHour: Int = 21
+    var alarmMinute: Int = 03
+    var alarmSecond: Int = 05
     
     @IBAction func stopAlarm(sender: AnyObject) {
         dosEquisThemeSong?.stop()
@@ -35,10 +35,6 @@ class AlarmViewController: UIViewController {
         if let dosEquisThemeSong = self.setupAudioPlayerWithFile("DosEquisThemeSong", type:"mp3") {
             self.dosEquisThemeSong = dosEquisThemeSong
         }
-        
-        //        if let dosEquisThemeSong = self.setupAudioPlayerWithFile("roll", type:"mp3") {
-        //            self.dosEquisThemeSong = dosEquisThemeSong
-        //        }
         
         let functionSelector: Selector = #selector(AlarmViewController.updateTime)
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: functionSelector, userInfo: nil, repeats: true)
